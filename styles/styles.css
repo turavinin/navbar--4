@@ -17,7 +17,7 @@ body {
   display: block;
   font-size: 15px;
   font-family: var(--font);
-  background-color: wheat;
+  background-color: #ebebeb;
 }
 
 /* HEADER IMG */
@@ -26,4 +26,46 @@ body {
   height: 200px;
   background-image: url('/images/bg.jpg');
   background-size: cover;
+}
+
+/* NAV */
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 81, 1) 0%,
+    rgba(102, 41, 108, 1) 9%,
+    rgba(13, 190, 236, 1) 47%,
+    rgba(0, 212, 255, 1) 70%
+  );
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    0px 5px 7px 3px rgba(0, 0, 0, 0.64);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 5px 7px 3px rgba(0, 0, 0, 0.64);
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 50px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 224, 183);
+  font-size: 1.3rem;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  margin-top: 20px;
+  height: 1000px;
 }
